@@ -6,7 +6,7 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc && node dist/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "vitest",
     "lint": "eslint .",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
@@ -24,9 +24,10 @@
     "lint-staged": "^15.3.0",
     "prettier": "3.4.2",
     "typescript": "^5.0.0",
-    "typescript-eslint": "^8.18.2"
+    "typescript-eslint": "^8.18.2",
+    "vitest": "^2.1.8"
   },
-    "lint-staged": {
+  "lint-staged": {
     "**/*.{js,ts}": [
       "eslint --fix",
       "prettier --write"
